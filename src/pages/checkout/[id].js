@@ -206,58 +206,65 @@ setPrice(res?.data?.amount);
                 />
               </div>
 
-              <div className="space-y-2">
-      {/* Free delivery option */}
-      <label
-        className={`flex items-start p-4 border rounded-lg cursor-pointer ${
-          selected === "free"
-            ? "border-blue-500 bg-blue-50"
-            : "border-gray-300 bg-white"
-        }`}
-      >
-        <input
-          type="radio"
-          name="delivery"
-          value="free"
-          checked={selected === "free"}
-          onChange={() => setSelected("free")}
-          className="mt-1 mr-3 accent-blue-600"
-        />
-        <div className="flex justify-between w-full">
-          <span className="text-sm font-medium text-gray-900">
-            24–48 цагийн хооронд хүргэгдэнэ
-          </span>
-          <span className="text-sm font-semibold text-blue-600 mt-1">
-            ҮНЭГҮЙ
-          </span>
-        </div>
-      </label>
-
-      {/* Paid delivery option */}
-      <label
-        className={`flex items-start p-4 border rounded-lg cursor-pointer ${
-          selected === "paid"
-            ? "border-blue-500 bg-blue-50"
-            : "border-gray-300 bg-white"
-        }`}
-      >
-        <input
-          type="radio"
-          name="delivery"
-          value="paid"
-          checked={selected === "paid"}
-          onChange={() => setSelected("paid")}
-          className="mt-1 mr-3 accent-blue-600"
-        />
-        <div className="flex flex-col">
-          <span className="text-sm font-medium text-gray-900">UB cab хүргэлт</span>
-          <span className="text-sm text-gray-500">Зөвхөн ажлын цагаар</span>
-        </div>
-        <div className="ml-auto text-sm font-semibold text-gray-800">
-          ₮ 20,000.00
-        </div>
-      </label>
-    </div>
+              <div className="space-y-4">
+                <span className='flex flex-col-reverse lg:flex-row justify-between items-center gap-1'>
+                  <h4 className='text-black'>Хүргэлтийн төрөл</h4>
+                </span>
+               <label
+                  className={`flex items-start p-4! border rounded-t-lg cursor-pointer ${
+                    selected === "free"
+                    ? "border-red-500 bg-blue-50"
+                    : "border-gray-300 bg-white"
+                  }`}
+                >
+                  <input
+                  type="radio"
+                  name="delivery"
+                  value="paid"
+                  checked={selected === "free"}
+                  onChange={() => setSelected("free")}
+                  className="mt-1 mr-3 accent-blue-600"
+                  />
+                  <div className="flex justify-between w-full">
+                    <span className='text-sm font-medium text-gray-800 flex-1'>
+                      Энгийн хүргэлт
+                      <p className='text-xs text-gray-500'>
+                        24-48 цагийн хооронд хүргэгдэнэ
+                      </p>
+                    </span>
+                    <span className="text-sm font-semibold text-blue-600 mt-1">
+                      ҮНЭГҮЙ
+                    </span>
+                  </div>
+                </label>
+                <label
+                  className={`flex items-start p-4! border rounded-b-lg cursor-pointer ${
+                    selected === "paid"
+                    ? "border-red-500 bg-blue-50"
+                    : "border-gray-300 bg-white"
+                  }`}
+                >
+                  <input
+                  type="radio"
+                  name="delivery"
+                  value="paid"
+                  checked={selected === "paid"}
+                  onChange={() => setSelected("paid")}
+                  className="mt-1 mr-3 accent-blue-600"
+                  />
+                  <div className="flex justify-between w-full">
+                    <span className='text-sm font-medium text-gray-800 flex-1'>
+                      UB Cab хүргэлт
+                      <p className='text-xs text-gray-500'>
+                        Зөвхөн ажлын цагаар
+                      </p>
+                    </span>
+                    <span className="text-sm font-semibold text-blue-600 mt-1">
+                      20,000
+                    </span>
+                  </div>
+                </label>
+              </div>
 
               {/* <div className='flex flex-col gap-2 text-black'>
                 <h5>Хүргэлтийн хэлбэр</h5>
@@ -333,7 +340,7 @@ setPrice(res?.data?.amount);
               <div className='flex flex-col gap-2 text-black'>
                 <p className='flex justify-between'>
                   <label>Нийт</label>
-                  <b>{price}</b>
+                  <b>{(price)}</b>
                 </p>
 
                 <p className='flex justify-between'>

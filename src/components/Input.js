@@ -14,12 +14,12 @@ const Input = ({
 }) => {
   return (
     <div className='w-full flex flex-col gap-1 border-[#EEF8FD]'>
-      {/* <p>{placeholder}</p> */}
+      {/* <p className="text-gray-600">{placeholder}</p> */}
       <input
         placeholder={placeholder}
         {...(register ? register(id, registerSetting) : {})}
         id={id}
-        className='peer w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-purple-500'
+        className='peer w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-purple-500 text-gray-600'
       />
       {hasError && <span className='text-red-500 text-sm'>{alert}</span>}
     </div>

@@ -12,7 +12,7 @@ const RadioButton = ({
 }) => {
   return (
     <label
-      className='cursor-pointer flex justify-between items-center border-solid border px-2 py-3 rounded-lg border-[#4FBDE4] bg-[#EEF8FD]'
+      className='cursor-pointer flex justify-between items-center border-solid border h-14 p-3! rounded-lg border-red-500 bg-[#EEF8FD]'
       htmlFor={id}
     >
       <span className={css.radio_button}>
