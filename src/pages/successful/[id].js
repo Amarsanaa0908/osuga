@@ -35,11 +35,11 @@ const Successful = () => {
   const renderMobileSummary = () => {
     return (
       <>
-        <Link className={css.mblLogo} href={'https://www.thedeely.com'}>
+        <Link className={css.mblLogo} href={'https://www.shoposuga.com'}>
           <img
             className={css.mblLogo}
             src={
-              'https://cdn.shopify.com/s/files/1/0548/9265/8940/files/deely_x320.png?v=1632205447'
+              'https://shoposuga.com/cdn/shop/files/OSUGA_LOGO.png?v=1727774392&width=260'
             }
           />
         </Link>
@@ -116,11 +116,11 @@ const Successful = () => {
 
       <div className={css.infoWrapper}>
         <div className={css.info}>
-          <Link href={'https://www.thedeely.com'} className={css.logoWrapper}>
+          <Link href={'https://www.shoposuga.com'} className={css.logoWrapper}>
             <img
               className={css.logo}
               src={
-                'https://cdn.shopify.com/s/files/1/0548/9265/8940/files/deely_x320.png?v=1632205447'
+                'https://shoposuga.com/cdn/shop/files/OSUGA_LOGO.png?v=1727774392&width=260'
               }
             />
           </Link>
@@ -141,7 +141,7 @@ const Successful = () => {
                 width={500}
                 height={500}
                 src={
-                  'https://cdn.shopify.com/s/files/1/0548/9265/8940/files/deely_x320.png?v=1632205447'
+                  'https://shoposuga.com/cdn/shop/files/OSUGA_LOGO.png?v=1727774392&width=260'
                 }
               />
             </div>
@@ -173,7 +173,7 @@ const Successful = () => {
 
             <Link
               className={css.bottom_continue}
-              href='https://www.thedeely.com'
+              href='https://www.shoposuga.com'
             >
               Худалдан авалтаа үргэлжлүүлэх
             </Link>
